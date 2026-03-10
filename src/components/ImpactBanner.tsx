@@ -7,7 +7,7 @@ export default function ImpactBanner() {
     ];
 
     return (
-        <section id="impact" className="bg-primary py-24 sm:py-32">
+        <section id="impact" className="bg-primary py-24 sm:py-32 mx-4 sm:mx-8 lg:mx-16 rounded-3xl">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-none">
                     <div className="text-center mb-16">
