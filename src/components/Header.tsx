@@ -18,11 +18,11 @@ export default function Header() {
                     </div>
                 </Link>
                 <nav className="hidden md:flex items-center gap-8">
-                    <Link href="#impact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-                        Notre Impact
+                    <Link href="/equipe" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                        Notre Équipe
                     </Link>
-                    <Link href="#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-                        Nos Services
+                    <Link href="/projets" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                        Nos Projets
                     </Link>
                     <Link
                         href="#contact"
