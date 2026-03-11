@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Services() {
     const services = [
         {
@@ -26,7 +28,7 @@ export default function Services() {
                         Ce que nous faisons
                     </p>
                     <p className="mt-6 text-lg leading-8 text-foreground/80">
-                        Une approche complète pour votre transition énergétique.
+                        Enoa conçoit, finance, construit et exploite des infrastructures énergétiques performantes, au service des entreprises et des territoires.
                     </p>
                 </div>
 
@@ -56,9 +58,9 @@ export default function Services() {
                                         {service.description}
                                     </p>
                                     <div className="mt-8">
-                                        <span className="text-sm font-semibold text-white/90 flex items-center gap-1 transition-all cursor-pointer">
-                                            En savoir plus <span aria-hidden="true">&rarr;</span>
-                                        </span>
+                                        <Link href="/#contact" className="text-sm font-semibold text-white/90 flex items-center gap-1 transition-all hover:text-white hover:gap-2">
+                                            Nous contacter <span aria-hidden="true">&rarr;</span>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
