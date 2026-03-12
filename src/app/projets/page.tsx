@@ -176,22 +176,51 @@ export default function ProjetsPage() {
         </section>
 
         {/* ── 3. CTA ───────────────────────────────────────────────────── */}
-        <section className="py-24 sm:py-28 bg-primary mx-4 sm:mx-8 lg:mx-16 rounded-3xl mb-16">
-          <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6">
-              Vous avez un projet ?<br />Une question ?<br />
-              <span className="font-light">Parlons-en.</span>
-            </h2>
-            <p className="text-lg text-white/80 leading-relaxed mb-10">
-              Que vous soyez une entreprise, une collectivité ou un investisseur, notre équipe est à votre
-              écoute pour échanger sur vos enjeux énergétiques et explorer ensemble des solutions concrètes.
-            </p>
-            <Link
-              href="/#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-sm font-semibold text-primary hover:bg-white/90 transition-colors"
-            >
-              Nous Contacter →
-            </Link>
+        <section 
+          className="relative py-16 sm:py-20 mx-4 sm:mx-8 lg:mx-16 rounded-3xl mb-16 overflow-hidden flex items-center md:min-h-[350px]"
+          style={{
+            backgroundImage: "url('/contact.jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Overlay to ensure readability and brand alignment */}
+          <div className="absolute inset-0 bg-primary/70 mix-blend-multiply transition-opacity duration-300" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-transparent/30" />
+
+          <div className="relative z-10 mx-auto w-full max-w-7xl px-6 lg:px-12 flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+            
+            {/* Left side: Text */}
+            <div className="max-w-2xl text-center md:text-left">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-4">
+                Vous avez un projet ? Une question ? <br className="hidden md:block" />
+                <span className="font-light text-secondary mt-2 block">Parlons-en.</span>
+              </h2>
+              <p className="text-lg text-white/90 leading-relaxed md:pr-8">
+                Que vous soyez une entreprise, une collectivité ou un investisseur, notre équipe est à votre 
+                écoute pour échanger sur vos enjeux énergétiques et explorer ensemble des solutions concrètes.
+              </p>
+            </div>
+
+            {/* Right side: Button */}
+            <div className="flex-shrink-0 flex items-center h-full pt-4 md:pt-8">
+              <Link
+                href="/#contact"
+                className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base font-semibold text-primary hover:bg-secondary hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
+              >
+                Nous Contacter
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            </div>
+            
           </div>
         </section>
 
