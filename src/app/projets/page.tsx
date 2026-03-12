@@ -205,7 +205,7 @@ export default function ProjetsPage() {
             {/* Right side: Button */}
             <div className="flex-shrink-0 flex items-center h-full pt-4 md:pt-8">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="group inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base font-semibold text-primary hover:bg-secondary hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
               >
                 Nous Contacter

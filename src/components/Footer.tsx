@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer id="contact" className="bg-white border-t border-primary">
+        <footer className="bg-white border-t border-primary">
             <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
                 {/* Main row: logo+desc left, contact right */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-8">

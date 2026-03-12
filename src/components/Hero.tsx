@@ -49,7 +49,7 @@ export default function Hero() {
                         style={{ animationDelay: "0.3s" }}
                     >
                         <Button
-                            href="#contact"
+                            href="/contact"
                             size="lg"
                             className="rounded-full px-8 gap-2"
                         >

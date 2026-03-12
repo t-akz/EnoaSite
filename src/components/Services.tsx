@@ -58,7 +58,7 @@ export default function Services() {
                                         {service.description}
                                     </p>
                                     <div className="mt-8">
-                                        <Link href="/#contact" className="text-sm font-semibold text-white/90 flex items-center gap-1 transition-all hover:text-white hover:gap-2">
+                                        <Link href="/contact" className="text-sm font-semibold text-white/90 flex items-center gap-1 transition-all hover:text-white hover:gap-2">
                                             Nous contacter <span aria-hidden="true">&rarr;</span>
                                         </Link>
                                     </div>
