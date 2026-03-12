@@ -33,7 +33,7 @@ export default function ProjectCard({ image, client, city, year, tag, stats }: P
       }}
     >
       {/* Homogenizing image effect (grayscale + contrast + subtle primary tint) */}
-      <div className="absolute inset-0 backdrop-grayscale-[60%] backdrop-contrast-125 bg-primary/20 mix-blend-multiply transition-all duration-500 group-hover:backdrop-grayscale-0" />
+      <div className="absolute inset-0 backdrop-grayscale-[60%] backdrop-contrast-125 bg-primary/20 mix-blend-multiply transition-all duration-500 group-hover:backdrop-grayscale-0 group-hover:backdrop-contrast-100 group-hover:bg-transparent" />
       {/* Dark overlay */}
       <div
         className="absolute inset-0 rounded-3xl transition-all duration-300"
