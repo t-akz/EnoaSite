@@ -24,7 +24,7 @@ export default function ProjectCard({ image, client, city, year, tag, stats }: P
 
   return (
     <div
-      className="relative overflow-hidden rounded-3xl flex flex-col"
+      className="relative overflow-hidden rounded-3xl flex flex-col group"
       style={{
         backgroundImage: `url('${image}')`,
         backgroundSize: "cover",
@@ -32,6 +32,8 @@ export default function ProjectCard({ image, client, city, year, tag, stats }: P
         minHeight: "340px",
       }}
     >
+      {/* Homogenizing image effect (grayscale + contrast + subtle primary tint) */}
+      <div className="absolute inset-0 backdrop-grayscale-[60%] backdrop-contrast-125 bg-primary/20 mix-blend-multiply transition-all duration-500 group-hover:backdrop-grayscale-0" />
       {/* Dark overlay */}
       <div
         className="absolute inset-0 rounded-3xl transition-all duration-300"
@@ -48,12 +50,12 @@ export default function ProjectCard({ image, client, city, year, tag, stats }: P
           <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary text-white">
             {tag}
           </span>
-          <span className="text-white/60 text-xs">{city} · {year}</span>
         </div>
 
         {/* Bottom content */}
         <div className="mt-auto">
-          <h3 className="text-xl font-light text-white mb-4 leading-snug">{client}</h3>
+          <h3 className="text-xl font-light text-white mb-1 leading-snug">{client}</h3>
+          <p className="text-sm text-white/50 mb-4">{city} · {year}</p>
 
           {/* Chiffres Clés panel */}
           <div
