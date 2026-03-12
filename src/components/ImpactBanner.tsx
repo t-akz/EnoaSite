@@ -7,15 +7,28 @@ export default function ImpactBanner() {
     ];
 
     return (
-        <section id="impact" className="bg-primary py-24 sm:py-32 mx-4 sm:mx-8 lg:mx-16 rounded-3xl">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <section
+            id="impact"
+            className="relative py-24 sm:py-32 mx-4 sm:mx-8 lg:mx-16 rounded-3xl overflow-hidden"
+            style={{
+                backgroundImage: "url('/impact.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundAttachment: "fixed",
+            }}
+        >
+            {/* Overlay to ensure readability */}
+            <div className="absolute inset-0 bg-primary/70 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-black/40" />
+
+            <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:max-w-none">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            Notre Impact en Chiffres
+                            ENOA EN CHIFFRES
                         </h2>
                         <p className="mt-4 text-lg leading-8 text-white/80">
-                            Enoa déploie des solutions concrètes pour accélérer la transition énergétique.
+                            Accélérer la transition énergétique grâce au déploiement de solutions concrètes.
                         </p>
                     </div>
                     <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center sm:grid-cols-2 lg:grid-cols-4">

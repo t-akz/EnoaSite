@@ -49,7 +49,7 @@ export default function ContactPage() {
                     href="mailto:contact@en-oa.com"
                     className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-base font-semibold text-primary hover:bg-secondary hover:text-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 group"
                   >
-                    Envoyer un E-mail
+                    Envoyer un email
                     <svg
                       className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                       fill="none"

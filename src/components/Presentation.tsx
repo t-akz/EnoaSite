@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Presentation() {
     return (
         <section id="presentation" className="bg-white pt-12 pb-10 sm:pt-16 sm:pb-14">
@@ -19,13 +21,13 @@ export default function Presentation() {
                     </div>
 
                     <div className="mt-10">
-                        <a
-                            href="#about"
+                        <Link
+                            href="/equipe"
                             className="inline-flex items-center gap-2 rounded-full border border-primary/40 px-7 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-white"
                         >
                             En savoir plus
                             <span aria-hidden="true">→</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
